@@ -1,0 +1,61 @@
+---
+layout: default
+header_class: alt
+
+banner:
+  class: major
+  title: Democratize Parking Spaces
+  excerpt: We aim at democratizing car parking spaces for the benefit of the society.
+  url: "#one"
+  link_text: Get involved
+
+tiles:
+- image: /images/pic01.jpg
+  url: /landing.html
+  title: Common Good
+  excerpt: Our goal is to enhance dialogue between citizens and local governments
+- image: /images/pic02.jpg
+  url: /landing.html
+  title: We ask
+  excerpt: We ask citizens about their views on number of different subjects
+- image: /images/pic03.jpg
+  url: /landing.html
+  title: We survey
+  excerpt: We get involved in public debates about how our cities should be shaped
+- image: /images/pic04.jpg
+  url: /landing.html
+  title: We investiagate
+  excerpt: We check how local governments' decisions affect particular group of people
+- image: /images/pic05.jpg
+  url: /landing.html
+  title: We unite
+  excerpt: We unite and support for particular causes
+- image: /images/pic06.jpg
+  url: /landing.html
+  title: We mediate
+  excerpt: We help voice citizens' concenrns
+
+---
+
+{% include layout/banner.html banner=page.banner %}
+
+<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+			{% include components/tiles.html id="one" tiles=page.tiles %}
+
+		<!-- Two -->
+			<section id="two">
+				<div class="inner">
+					<header class="major">
+						<h2>Our mission</h2>
+					</header>
+					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+					<ul class="actions">
+						<li><a href="landing.html" class="button next">Get Started</a></li>
+					</ul>
+				</div>
+			</section>
+
+	</div>
