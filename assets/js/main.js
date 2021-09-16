@@ -250,10 +250,12 @@
 
       /* Alerts the results */
       posting.done(function(data) {
-        $('#result').text('success');
+        //$('#result').text('success');
+        alert("Thank you!")
       });
       posting.fail(function() {
-        $('#result').text('failed');
+        //$('#result').text('failed');
+        alert("Connection failed")
       });
     });
 
