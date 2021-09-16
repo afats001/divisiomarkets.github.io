@@ -231,6 +231,34 @@
 
 		});
 
+    var newsletter = $("#newsletter");
+    newsletter.submit(function(event) {
+
+      /* stop form from submitting normally */
+      event.preventDefault();
+
+      /* get the action attribute from the <form action=""> element */
+      // var $form = $(this),
+      // url = $form.attr('action');
+        url = "https://script.google.com/macros/s/AKfycbxqMnDiJLihAtMxmnQxJsk7TGKwKO8C_Ooe6u_kJWAb_qkdkUWZ6iMFwrevisuaEN3G/exec?"
+
+      /* Send the data using post with element id name and name2*/
+      var posting = $.post(url, {
+        name: $('#name').val(),
+        email: $('#email').val()
+      });
+
+      /* Alerts the results */
+      posting.done(function(data) {
+        $('#result').text('success');
+      });
+      posting.fail(function() {
+        $('#result').text('failed');
+      });
+    });
+
+
+
 	// Menu.
 		var $menu = $('#menu'),
 			$menuInner;
