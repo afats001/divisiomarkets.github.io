@@ -240,7 +240,7 @@
       /* get the action attribute from the <form action=""> element */
       // var $form = $(this),
       // url = $form.attr('action');
-        url = "https://script.google.com/macros/s/AKfycbxqMnDiJLihAtMxmnQxJsk7TGKwKO8C_Ooe6u_kJWAb_qkdkUWZ6iMFwrevisuaEN3G/exec?"
+        url = "https://script.google.com/macros/s/AKfycbyqiEiX76UDoNyXpD9aSTRZk9IDDDE2SfEWO8bbq9ehFROX9zcz8_g62_naNCQEJred/exec?"
 
       /* Send the data using post with element id name and name2*/
       var posting = $.post(url, {
